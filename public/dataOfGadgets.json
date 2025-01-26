@@ -1,0 +1,213 @@
+[
+    {
+        "product_id": "1",
+        "product_title": "TechPro UltraBook 14",
+        "product_image": "https://i.ibb.co.com/K0tyxc6/Lap1.jpg",
+        "category": "Laptop",
+        "price": 900,
+        "description": "A powerful and lightweight 14-inch laptop for professionals on the go.",
+        "Specification": [
+            "Intel Core i7 Processor",
+            "16GB RAM",
+            "512GB SSD",
+            "Intel Iris Xe Graphics",
+            "14-inch FHD Display"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "2",
+        "product_title": "GamerX BeastBook 17",
+        "product_image": "https://i.ibb.co.com/6sw7Jkh/Lap2.jpg",
+        "category": "Laptop",
+        "price": 1800,
+        "description": "A high-performance 17-inch gaming laptop with RGB keyboard and VR support.",
+        "Specification": [
+            "AMD Ryzen 9 Processor",
+            "32GB RAM",
+            "1TB SSD",
+            "NVIDIA GeForce RTX 3080",
+            "17-inch QHD Display"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "3",
+        "product_title": "EcoNote Flex 13",
+        "product_image": "https://i.ibb.co.com/59cZJcH/Lap3.jpg",
+        "category": "Laptop",
+        "price": 700,
+        "description": "A versatile and eco-friendly 2-in-1 laptop with a 13-inch touchscreen.",
+        "Specification": [
+            "Intel Core i5 Processor",
+            "8GB RAM",
+            "256GB SSD",
+            "Intel UHD Graphics",
+            "13-inch FHD Touch Display"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": "4",
+        "product_title": "StudyHub Slim 15",
+        "product_image": "https://i.ibb.co.com/ftHX4FM/Lap4.jpg",
+        "category": "Laptop",
+        "price": 500,
+        "description": "A budget-friendly 15-inch laptop ideal for students and everyday tasks.",
+        "Specification": [
+            "Intel Core i3 Processor",
+            "8GB RAM",
+            "128GB SSD",
+            "Intel UHD Graphics",
+            "15.6-inch HD Display"
+        ],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": "5",
+        "product_title": "EliteBook Pro 13",
+        "product_image": "https://i.ibb.co.com/hLcMJ7S/Lap5.jpg",
+        "category": "Laptop",
+        "price": 1300,
+        "description": "A premium 13-inch business laptop with advanced security features.",
+        "Specification": [
+            "Intel Core i7 Processor",
+            "16GB RAM",
+            "512GB SSD",
+            "Intel Iris Xe Graphics",
+            "13-inch FHD Display"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "6",
+        "product_title": "SwiftBook Pro 15",
+        "product_image": "https://i.ibb.co.com/QD0B9n9/Lap6.jpg",
+        "category": "Laptop",
+        "price": 800,
+        "description": "A flagship laptop with an edge-to-edge display and advanced camera system.",
+        "Specification": [
+            "Intel Core i7 11th Gen",
+            "16GB DDR4 RAM",
+            "512GB SSD",
+            "NVIDIA GTX 1650 4GB graphics",
+            "15.6-inch Full HD IPS (1920x1080) display",
+            "Battery 10 hours"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "7",
+        "product_title": "Lite Phone 5S",
+        "product_image": "https://i.ibb.co.com/wdJ6j56/Phn2.jpg",
+        "category": "Phone",
+        "price": 200,
+        "description": "A compact and affordable smartphone for everyday use.",
+        "Specification": [
+            "5.8-inch LCD Display",
+            "64GB Storage",
+            "4GB RAM",
+            "Single 12MP Rear Camera",
+            "4G LTE",
+            "3000mAh Battery"
+        ],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": "8",
+        "product_title": "Infinity Z Pro",
+        "product_image": "https://i.ibb.co.com/sHNvDmD/Phn3.jpg",
+        "category": "Phone",
+        "price": 1100,
+        "description": "A high-performance smartphone with a quad-camera setup and ultra-fast processing.",
+        "Specification": [
+            "6.8-inch Dynamic AMOLED Display",
+            "256GB Storage",
+            "12GB RAM",
+            "Quad 64MP Rear Camera",
+            "5G Enabled",
+            "5000mAh Battery"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "9",
+        "product_title": "MiniMax Fold 2",
+        "product_image": "https://i.ibb.co.com/k9bHn48/Phn4.jpg",
+        "category": "Phone",
+        "price": 1400,
+        "description": "A versatile foldable phone that transforms into a tablet with a stunning display.",
+        "Specification": [
+            "7.3-inch Foldable OLED Display",
+            "512GB Storage",
+            "12GB RAM",
+            "Triple 50MP Rear Camera",
+            "5G Enabled",
+            "4500mAh Battery"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "10",
+        "product_title": "SoundPro True Wireless",
+        "product_image": "https://i.ibb.co.com/dDP0XFN/EarP1.jpg",
+        "category": "Earpods",
+        "price": 150,
+        "description": "Premium true wireless earbuds with noise-cancellation and long battery life.",
+        "Specification": [
+            "Active Noise Cancellation",
+            "Up to 24 Hours Battery Life",
+            "Bluetooth 5.2",
+            "IPX5 Water Resistant",
+            "Touch Controls",
+            "Wireless Charging Case"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "11",
+        "product_title": "BassBoost Pods",
+        "product_image": "https://i.ibb.co.com/0mfW24M/EarP2.jpg",
+        "category": "Earpods",
+        "price": 50,
+        "description": "Wireless earbuds with enhanced bass and comfortable in-ear fit.",
+        "Specification": [
+            "Enhanced Bass Sound",
+            "Up to 18 Hours Battery Life",
+            "Bluetooth 5.0",
+            "Sweat & Water Resistant (IPX4)",
+            "In-Ear Fit",
+            "Quick Charge Feature"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "12",
+        "product_title": "LitePods Air",
+        "product_image": "https://i.ibb.co.com/h8FxGkw/EarP3.jpg",
+        "category": "Earpods",
+        "price": 50,
+        "description": "Affordable wireless earbuds with reliable sound quality and fast pairing.",
+        "Specification": [
+            "Crystal Clear Sound",
+            "Up to 15 Hours Battery Life",
+            "Bluetooth 5.1",
+            "IPX3 Water Resistant",
+            "Auto Pairing",
+            "USB-C Charging"
+        ],
+        "availability": true,
+        "rating": 4.0
+    }
+]
