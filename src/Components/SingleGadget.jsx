@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SingleGadget = (gadget) => {
+const SingleGadget = ({gadget}) => {
     const { product_id, product_image, product_title, price } = gadget;
     return (
         <div className="card bg-base-100 w-50 shadow-xl">

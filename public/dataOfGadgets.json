@@ -4,7 +4,7 @@
         "product_title": "TechPro UltraBook 14",
         "product_image": "https://i.ibb.co.com/K0tyxc6/Lap1.jpg",
         "category": "Laptop",
-        "price": 900,
+        "price": 850,
         "description": "A powerful and lightweight 14-inch laptop for professionals on the go.",
         "Specification": [
             "Intel Core i7 Processor",
@@ -14,14 +14,14 @@
             "14-inch FHD Display"
         ],
         "availability": true,
-        "rating": 4.5
+        "rating": 4.1
     },
     {
         "product_id": "2",
-        "product_title": "GamerX BeastBook 17",
-        "product_image": "https://i.ibb.co.com/6sw7Jkh/Lap2.jpg",
+        "product_title": "Apple MacBook Pro 16",
+        "product_image": "https://i.ibb.co.com/JptrSW1/mac16jpg.jpg",
         "category": "Laptop",
-        "price": 1800,
+        "price": 2200,
         "description": "A high-performance 17-inch gaming laptop with RGB keyboard and VR support.",
         "Specification": [
             "AMD Ryzen 9 Processor",
@@ -31,14 +31,14 @@
             "17-inch QHD Display"
         ],
         "availability": true,
-        "rating": 4.8
+        "rating": 4.9
     },
     {
         "product_id": "3",
         "product_title": "EcoNote Flex 13",
         "product_image": "https://i.ibb.co.com/59cZJcH/Lap3.jpg",
         "category": "Laptop",
-        "price": 700,
+        "price": 900,
         "description": "A versatile and eco-friendly 2-in-1 laptop with a 13-inch touchscreen.",
         "Specification": [
             "Intel Core i5 Processor",
@@ -48,14 +48,14 @@
             "13-inch FHD Touch Display"
         ],
         "availability": true,
-        "rating": 4.2
+        "rating": 4.0
     },
     {
         "product_id": "4",
         "product_title": "StudyHub Slim 15",
         "product_image": "https://i.ibb.co.com/ftHX4FM/Lap4.jpg",
         "category": "Laptop",
-        "price": 500,
+        "price": 750,
         "description": "A budget-friendly 15-inch laptop ideal for students and everyday tasks.",
         "Specification": [
             "Intel Core i3 Processor",
@@ -65,14 +65,14 @@
             "15.6-inch HD Display"
         ],
         "availability": true,
-        "rating": 3.9
+        "rating": 2.5
     },
     {
         "product_id": "5",
         "product_title": "EliteBook Pro 13",
         "product_image": "https://i.ibb.co.com/hLcMJ7S/Lap5.jpg",
         "category": "Laptop",
-        "price": 1300,
+        "price": 1100,
         "description": "A premium 13-inch business laptop with advanced security features.",
         "Specification": [
             "Intel Core i7 Processor",
@@ -82,14 +82,14 @@
             "13-inch FHD Display"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.6
     },
     {
         "product_id": "6",
         "product_title": "SwiftBook Pro 15",
         "product_image": "https://i.ibb.co.com/QD0B9n9/Lap6.jpg",
         "category": "Laptop",
-        "price": 800,
+        "price": 825,
         "description": "A flagship laptop with an edge-to-edge display and advanced camera system.",
         "Specification": [
             "Intel Core i7 11th Gen",
@@ -100,14 +100,14 @@
             "Battery 10 hours"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.3
     },
     {
         "product_id": "7",
-        "product_title": "Lite Phone 5S",
+        "product_title": "Lite Phone 6S",
         "product_image": "https://i.ibb.co.com/wdJ6j56/Phn2.jpg",
         "category": "Phone",
-        "price": 200,
+        "price": 300,
         "description": "A compact and affordable smartphone for everyday use.",
         "Specification": [
             "5.8-inch LCD Display",
@@ -118,14 +118,14 @@
             "3000mAh Battery"
         ],
         "availability": true,
-        "rating": 4.1
+        "rating": 3.9
     },
     {
         "product_id": "8",
         "product_title": "Infinity Z Pro",
         "product_image": "https://i.ibb.co.com/sHNvDmD/Phn3.jpg",
         "category": "Phone",
-        "price": 1100,
+        "price": 1300,
         "description": "A high-performance smartphone with a quad-camera setup and ultra-fast processing.",
         "Specification": [
             "6.8-inch Dynamic AMOLED Display",
@@ -136,14 +136,14 @@
             "5000mAh Battery"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.1
     },
     {
         "product_id": "9",
-        "product_title": "MiniMax Fold 2",
+        "product_title": "MiniMax Fold 3",
         "product_image": "https://i.ibb.co.com/k9bHn48/Phn4.jpg",
         "category": "Phone",
-        "price": 1400,
+        "price": 1550,
         "description": "A versatile foldable phone that transforms into a tablet with a stunning display.",
         "Specification": [
             "7.3-inch Foldable OLED Display",
@@ -154,14 +154,14 @@
             "4500mAh Battery"
         ],
         "availability": true,
-        "rating": 4.9
+        "rating": 4.7
     },
     {
         "product_id": "10",
         "product_title": "SoundPro True Wireless",
         "product_image": "https://i.ibb.co.com/dDP0XFN/EarP1.jpg",
-        "category": "Earpods",
-        "price": 150,
+        "category": "EarPod",
+        "price": 250,
         "description": "Premium true wireless earbuds with noise-cancellation and long battery life.",
         "Specification": [
             "Active Noise Cancellation",
@@ -172,14 +172,14 @@
             "Wireless Charging Case"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.5
     },
     {
         "product_id": "11",
         "product_title": "BassBoost Pods",
         "product_image": "https://i.ibb.co.com/0mfW24M/EarP2.jpg",
-        "category": "Earpods",
-        "price": 50,
+        "category": "EarPod",
+        "price": 150,
         "description": "Wireless earbuds with enhanced bass and comfortable in-ear fit.",
         "Specification": [
             "Enhanced Bass Sound",
@@ -190,14 +190,14 @@
             "Quick Charge Feature"
         ],
         "availability": true,
-        "rating": 4.3
+        "rating": 3.3
     },
     {
         "product_id": "12",
         "product_title": "LitePods Air",
         "product_image": "https://i.ibb.co.com/h8FxGkw/EarP3.jpg",
-        "category": "Earpods",
-        "price": 50,
+        "category": "EarPod",
+        "price": 100,
         "description": "Affordable wireless earbuds with reliable sound quality and fast pairing.",
         "Specification": [
             "Crystal Clear Sound",
@@ -208,6 +208,6 @@
             "USB-C Charging"
         ],
         "availability": true,
-        "rating": 4.0
+        "rating": 3.0
     }
 ]

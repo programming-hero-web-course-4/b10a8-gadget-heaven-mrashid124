@@ -3,15 +3,31 @@ import SingleGadget from './SingleGadget';
 
 const AllGadgets = () => {
     const [allGadgets, setAllGadget] = useState([]);
+    const [products, setProducts] = useState([]);
+    const [btn, setBtn] = useState("");
 
     useEffect(() => {
         fetch('/public/dataOfGadgets.json')
             .then(res => res.json())
             .then(data => setAllGadget(data))
-    }, [])
+    }, []);
 
+    useEffect(() => {
+        fetch('/public/dataOfGadgets.json')
+            .then(res => res.json())
+            .then(data => setProducts(data))
+    }, []);
+
+
+    const laptops = products.filter(laptop => laptop.category === "Laptop");
+    const phones = products.filter(phone => phone.category === "Phone");
+    const earPods = products.filter(earPod => earPod.category === "EarPod");
+    const smartwatches = products.filter(smartwatch => smartwatch.category === "SmartWatch");
 
     console.log(allGadgets);
+
+
+
     return (
         <div className='space-y-6'>
             <h1 className='text-3xl font-bold text-center'>Explore Cutting-Edge Gadgets</h1>
