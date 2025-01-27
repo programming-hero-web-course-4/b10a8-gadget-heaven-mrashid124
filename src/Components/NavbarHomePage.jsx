@@ -120,3 +120,4 @@ const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
 };
 
 export default NavbarHomePage;
+
