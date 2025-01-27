@@ -1,7 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 const Navbar = () => {
+    const navigate = useNavigate();
+    const handleCartBtn = () => {
+        navigate("/dashboard");
+    }
 
     const pageLinks =
     <>
@@ -74,7 +78,7 @@ const Navbar = () => {
                 <div className="card-body">
                    
                     <div className="card-actions">
-                        <button className="btn btn-primary btn-block">View cart</button>
+                        <button onClick={handleCartBtn} className="btn btn-primary btn-block">View cart</button>
                     </div>
                 </div>
             </div>
@@ -83,7 +87,7 @@ const Navbar = () => {
 
     <div className="indicator">
         <CiHeart className='text-2xl'></CiHeart>
-        
+        <span className="badge badge-sm indicator-item">{}</span>
     </div>
 
 </div>

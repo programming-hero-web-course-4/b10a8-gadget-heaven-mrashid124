@@ -87,7 +87,7 @@ const NavbarHomePage = () => {
                                 <div className="card-body">
                                     <span className="text-lg font-bold">{ } Items</span>
                                     <div className="card-actions">
-                                        <button className="btn btn-primary btn-block">View cart</button>
+                                        <button onClick={handleCartBtn} className="btn btn-primary btn-block">View cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@ const NavbarHomePage = () => {
                     <h1 className='w-1/2 mx-auto text-3xl text-white font-extrabold'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                     <p className='w-1/2 mx-auto text-white'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                     <div className='flex justify-center'>
-                        <button className='btn btn-sm'>Buy now</button>
+                        <button onClick={handleShopBtn} className='btn btn-sm'>Buy now</button>
                     </div>
                 </div>
             </div>

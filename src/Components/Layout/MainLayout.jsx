@@ -1,9 +1,16 @@
 import React from 'react';
 import NavbarHomePage from '../NavbarHomePage';
 import Footer from '../Footer/Footer';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation, useNavigation } from 'react-router-dom';
 
 const MainLayout = () => {
+    const navigation = useNavigation();
+    const location = useLocation();
+
+    // let cartTotalItems = getStoredCartList();
+    // let wishTotalItems = getStoredWishList();
+
+
     return (
         <div>
             {/* Navbar */}
