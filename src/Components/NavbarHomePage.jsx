@@ -2,8 +2,9 @@ import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 import banner from "../assets/banner.jpg"
+import TitleOfPage from './TitleOfPage';
 
-const NavbarHomePage = () => {
+const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
     const navigate = useNavigate();
 
     const handleShopBtn = () => {
@@ -24,7 +25,8 @@ const NavbarHomePage = () => {
 
     return (
         <div>
-            <div className='bg-blue-700 rounded-3xl mt-5'>
+            {/* <TitleOfPage title="Gadget Heaven | Home"></TitleOfPage> */}
+            <div className='bg-purple-700 rounded-3xl mt-6'>
                 <div className="navbar">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -78,16 +80,16 @@ const NavbarHomePage = () => {
                                             strokeWidth="2"
                                             d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                     </svg>
-                                    <span className="badge badge-sm indicator-item">{ }</span>
+                                    <span className="badge badge-sm indicator-item">{cartItemsTotal.length}</span>
                                 </div>
                             </div>
                             <div
                                 tabIndex={0}
                                 className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
                                 <div className="card-body">
-                                    <span className="text-lg font-bold">{ } Items</span>
+                                    <span className="text-lg font-bold">{cartItemsTotal.length} Items</span>
                                     <div className="card-actions">
-                                        <button onClick={handleCartBtn} className="btn btn-primary btn-block">View cart</button>
+                                        <button onClick={handleCartBtn} className="btn btn-primary btn-block">View Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +98,7 @@ const NavbarHomePage = () => {
 
                     <div className="indicator">
                         <CiHeart className='text-2xl bg-white rounded-full p-1'></CiHeart>
-                        <span className="badge badge-sm indicator-item">{ }</span>
+                        <span className="badge badge-sm indicator-item">{wishItemsTotal.length}</span>
                     </div>
                 </div>
 
@@ -104,13 +106,13 @@ const NavbarHomePage = () => {
                     <h1 className='w-1/2 mx-auto text-3xl text-white font-extrabold'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                     <p className='w-1/2 mx-auto text-white'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                     <div className='flex justify-center'>
-                        <button onClick={handleShopBtn} className='btn btn-sm'>Buy now</button>
+                        <button onClick={handleShopBtn} className='btn btn-primary'>Buy now</button>
                     </div>
                 </div>
             </div>
 
             <div className='-mt-28 mb-12'>
-                <img className='w-1/2 mx-auto rounded-3xl border-double border-6 border-white' src={banner} alt="" />
+                <img className='w-1/2 mx-auto rounded-2xl border-double border-4 border-white' src={banner} alt="" />
             </div>
 
         </div>

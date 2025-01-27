@@ -14,13 +14,13 @@ const getToCart = () => {
 const addToCart = (id) => {
     const storedList = getToCart();
     if (storedList.includes(id)) {
-        toast("Already Exist in cart");
+        toast("This item already Exist!");
     }
     else {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem('cart-list', storedListStr);
-        toast("Item added successfully in cart");
+        toast("Item added successfully");
     }
 }
 
@@ -38,13 +38,13 @@ const getToWishlist = () => {
 const addToWishlist = (id) => {
     const storedWishList = getToWishlist();
     if (storedWishList.includes(id)) {
-        toast("You can not add same item multiple times in wishlist");
+        toast("You can not add same item in your wishlist");
     }
     else {
         storedWishList.push(id);
         const storedWishListStr = JSON.stringify(storedWishList);
         localStorage.setItem('wish-list', storedWishListStr);
-        toast("Item added successfully in wishlist");
+        toast("Item added successfully.");
     }
 }
 
