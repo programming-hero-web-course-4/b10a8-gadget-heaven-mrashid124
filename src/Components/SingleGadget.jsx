@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const SingleGadget = ({gadget}) => {
     const { product_id, product_image, product_title, price } = gadget;
     return (
-        <div className="card bg-base-100 w-50 shadow-xl">
-            <figure className="px-12 pt-6">
+        <div className="card bg-purple-400 w-50 shadow-xl">
+            <figure className="px-6 pt-6">
                 <img
                     src={product_image}
                     alt="Gadgets"
