@@ -106,7 +106,7 @@ const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
                     <h1 className='w-1/2 mx-auto text-3xl text-white font-extrabold'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                     <p className='w-1/2 mx-auto text-white'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                     <div className='flex justify-center'>
-                        <button onClick={handleShopBtn} className='btn btn-primary'>Buy now</button>
+                        <button onClick={handleShopBtn} className='btn btn-primary '>Buy now</button>
                     </div>
                 </div>
             </div>
