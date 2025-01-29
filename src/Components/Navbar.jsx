@@ -79,7 +79,7 @@ const Navbar = ({ cartItemsTotal, wishItemsTotal }) => {
                             <div className="card-body">
                             <span className="text-lg font-bold">{cartItemsTotal.length} Items</span>
                                 <div className="card-actions">
-                                    <button onClick={handleCartBtn} className="btn btn-primary btn-block">View cart</button>
+                                    <button onClick={handleCartBtn} className="btn btn-sm btn-block rounded-2xl hover:bg-purple-800  hover:text-white">View cart</button>
                                 </div>
                             </div>
                         </div>

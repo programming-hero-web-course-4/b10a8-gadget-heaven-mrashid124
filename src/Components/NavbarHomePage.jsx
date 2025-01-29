@@ -26,7 +26,7 @@ const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
     return (
         <div>
             {/* <TitleOfPage title="Gadget Heaven | Home"></TitleOfPage> */}
-            <div className='bg-purple-700 rounded-3xl mt-6'>
+            <div className='bg-purple-800 rounded-3xl mt-6'>
                 <div className="navbar">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -89,7 +89,7 @@ const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
                                 <div className="card-body">
                                     <span className="text-lg font-bold">{cartItemsTotal.length} Items</span>
                                     <div className="card-actions">
-                                        <button onClick={handleCartBtn} className="btn btn-primary btn-block">View Cart</button>
+                                        <button onClick={handleCartBtn} className="btn btn-primary btn-block rounded-2xl">View Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -103,10 +103,10 @@ const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
                 </div>
 
                 <div className='pt-10 pb-32 space-y-5'>
-                    <h1 className='w-1/2 mx-auto text-3xl text-white font-extrabold'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
-                    <p className='w-1/2 mx-auto text-white'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+                    <h1 className='w-1/2 mx-auto text-3xl text-white font-extrabold text-center'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
+                    <p className='w-1/2 mx-auto text-white text-center'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                     <div className='flex justify-center'>
-                        <button onClick={handleShopBtn} className='btn btn-primary '>Buy now</button>
+                        <button onClick={handleShopBtn} className='btn btn-sm rounded-4xl text-center p-2 text-6xl text-purple-500 border-b-purple-600 font-extrabold bg-gray-300 hover:bg-purple-800  hover:text-white'>Shop Now</button>
                     </div>
                 </div>
             </div>

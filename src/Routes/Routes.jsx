@@ -6,6 +6,7 @@ import Statistics from "../Components/Statistics";
 import Dashboard from "../Components/Dashboard";
 import Login from "../Components/Login";
 import Error from "../Components/Error/Error";
+import ProductDetail from "../Components/ProductDetail";
 
 const routes = createBrowserRouter([
     {
@@ -25,6 +26,11 @@ const routes = createBrowserRouter([
         {
             path: "/dashboard",
             element: <Dashboard></Dashboard>,
+            loader: ()=> fetch('/public/dataOfGadgets.json')
+          },
+        {
+            path: "/product/:productId",
+            element: <ProductDetail></ProductDetail>,
             loader: ()=> fetch('/public/dataOfGadgets.json')
           },
         {
