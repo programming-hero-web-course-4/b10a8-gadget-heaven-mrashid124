@@ -12,7 +12,7 @@ const ProductDetail = () => {
     const [wishListBtn, setWishListBtn] = useState(false);
 
     const product = data.find(product => product.product_id === productId);
-    const { product_id, product_title, product_image, category, price, description, Specification, availability, rating } = product;
+    const { product_id, product_title, product_image, price, description, Specification, availability, rating } = product;
 
     const navigate = useNavigate();
     const handleCart = () => {
@@ -33,7 +33,7 @@ const ProductDetail = () => {
             <TitleOfPage title="Gadget Heaven | Dashboard"></TitleOfPage>
             <div className='bg-purple-600 h-[20rem] rounded-xl flex flex-col items-center pt-10 pb-32 space-y-5'>
                 <h1 className='text-3xl font-semibold text-gray-50 text-center tracking-wide pt-5 pb-2'>Product Details</h1>
-                <p className='text-center text-white text-sm text-gray-200 w-[500px] text-center py-2'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+                <p className='text-sm text-gray-200 w-[500px] text-center py-2'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
 
             <div className="-mt-24 hero w-3/4 border-2 border-gray-200 w-[1010px] p-5 mx-auto rounded-xl bg-gray-50 grid grid-cols-5">
@@ -55,14 +55,14 @@ const ProductDetail = () => {
                         </div>
                         <p className="font-bold">Rating: {rating}</p>
                         <ReactStarsRating
-                            className='inline'
+                            // className='inline'
                             count={5}
                             onChange={() => ratingUpdated(rating)}
                             size={30}
                             activeColor="#ffd700"
                         />
                         <button onClick={() => {
-                            handleAddToCart(product_id);
+                            handleAddToCart(product);
                             handleCart();
                         }
                         } className="btn btn-primary">Add to Cart<IoCartOutline></IoCartOutline> </button>

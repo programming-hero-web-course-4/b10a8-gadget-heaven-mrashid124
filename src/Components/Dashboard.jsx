@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { getToCart, getToWishlist } from '../Utilities/addingToCart';
 import CartGadgets from './CartGadgets';
 import WishingGadgets from './WishingGadgets';
+import TitleOfPage from './TitleOfPage';
 
 const Dashboard = () => {
     const allProducts = useLoaderData();
@@ -11,13 +12,13 @@ const Dashboard = () => {
 
     useEffect(() => {
         const storedCartItems = getToCart();
-        const cartItemList = allProducts.filter(gadget => storedCartItems.includes(gadget.product_id));
+        const cartItemList = allProducts.filter(product => storedCartItems.includes(product.product_id));
         setCartProducts(cartItemList);
     }, []);
 
     useEffect(() => {
         const storedWishItems = getToWishlist();
-        const wishItemList = allProducts.filter(gadget => storedWishItems.includes(gadget.product_id));
+        const wishItemList = allProducts.filter(product => storedWishItems.includes(product.product_id));
         setWishProducts(wishItemList);
     }, []);
 
@@ -45,7 +46,7 @@ const Dashboard = () => {
 
     return (
         <div>
-             {/* <TitleOfPage title="Gadget Heaven | Home"></TitleOfPage> */}
+             <TitleOfPage title="Gadget Heaven | Dashboard"></TitleOfPage>
             <div className='bg-purple-800 p-5 space-y-5'>
                 <h1 className='text-center text-3xl text-white'>Dashboard</h1>
                 <p className='text-center text-white'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

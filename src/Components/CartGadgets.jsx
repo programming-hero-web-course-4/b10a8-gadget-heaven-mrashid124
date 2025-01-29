@@ -2,6 +2,7 @@ import React from 'react';
 import groupImg from "../assets/Group.png"
 import { MdDelete } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 const CartGadgets = ({cartProducts, setCartProducts}) => {
@@ -61,18 +62,18 @@ const CartGadgets = ({cartProducts, setCartProducts}) => {
 
             <div className='space-y-5'>
                 {
-                    cartProducts.map(gadget => <div key={gadget.product_id} className='flex gap-5 items-center'>
+                    cartProducts.map(product => <div key={product.product_id} className='flex gap-5 items-center'>
                         <div>
-                            <img className='w-[100px] h-[100px] rounded-full' src={gadget.product_image} alt="" />
+                            <img className='w-[100px] h-[100px] rounded-full' src={product.product_image} alt="" />
                         </div>
                         <div>
                             <div>
-                                <h4 className='text-xl font-bold'>{gadget.product_title}</h4>
-                                <p>{gadget.description}</p>
-                                <p className="text-sm font-bold">Price: ${gadget.price}</p>
+                                <h4 className='text-xl font-bold'>{product.product_title}</h4>
+                                <p>{product.description}</p>
+                                <p className="text-sm font-bold">Price: ${product.price}</p>
                             </div>
                             <div>
-                                <MdDelete onClick={() => handleDelete(gadget.product_id)} className="w-[25px] h-[25px]"></MdDelete>
+                                <MdDelete onClick={() => handleDelete(product.product_id)} className="w-[25px] h-[25px]"></MdDelete>
                             </div>
                         </div>
                     </div>)
