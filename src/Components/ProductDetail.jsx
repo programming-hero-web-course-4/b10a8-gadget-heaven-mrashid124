@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import { addToCart, addToWishlist } from '../Utilities/addingToCart';
 import ReactStarsRating from 'react-awesome-stars-rating';
-import { IoCartOutline } from 'react-icons/io5';
+import { MdAddShoppingCart } from "react-icons/md";
+
 import { CiHeart } from 'react-icons/ci';
 import TitleOfPage from './TitleOfPage';
 
@@ -36,14 +37,14 @@ const ProductDetail = () => {
                 <p className='text-sm text-gray-200 w-[500px] text-center py-2'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
 
-            <div className="-mt-24 hero w-3/4 border-2 border-gray-200 w-[1010px] p-5 mx-auto rounded-xl bg-gray-50 grid grid-cols-5">
+            <div className="-mt-24 hero w-3/4 text-black border-2 border-gray-200 w-[1010px] p-5 mx-auto rounded-xl bg-gray-200 grid grid-cols-5">
                 <div className="hero-content flex-col col-span-2">
                     <img
                         src={product_image}
-                        className="w-full h-[450px]  rounded-lg shadow-2xl" />
+                        className="w-[450px] h-[450px]  rounded-lg shadow-2xl" />
 
                     <div className='col-span-3 px-5 space-y-1'>
-                        <h1 className="text-3xl font-bold">{product_title}</h1>
+                        <h1 className="text-4xl font-bold">{product_title}</h1>
                         <p className="font-bold text-xl text-gray-600 ">Price: ${price}</p>
                         {availability ? <button className="btn btn-sm font-medium text-green-600 bg-green-100 my-3 rounded-3xl border-2 border-green-600">In Stock</button> : <button className="btn btn-sm bg-green-300 rounded-3xl">Out of Stock</button>}
                         <p className="">{description}</p>
@@ -53,21 +54,21 @@ const ProductDetail = () => {
                                 Specification.map(item => <li>{item}</li>)
                             }
                         </div>
-                        <p className="font-bold">Rating: {rating}</p>
+                        <p className="font-bold mt-4">Rating: {rating}</p>
                         <ReactStarsRating
-                            // className='inline'
+                            className='flex g-3 mb-16'
                             count={5}
                             onChange={() => ratingUpdated(rating)}
                             size={30}
                             activeColor="#ffd700"
                         />
                         <button onClick={() => {
-                            handleAddToCart(product);
+                            handleAddToCart(product_id);
                             handleCart();
                         }
-                        } className="btn btn-primary">Add to Cart<IoCartOutline></IoCartOutline> </button>
+                        } className="btn btn-sm rounded-4xl text-center p-2 text-4xl text-purple-500 border-b-purple-600 font-bold bg-gray-300 hover:bg-purple-800  hover:text-white">Add to Cart<MdAddShoppingCart /> </button>
                         {
-                            wishListBtn ? <button className="ml-3 btn btn-primary" disabled>Add to Wishlist <CiHeart></CiHeart></button> : <button onClick={() => handleAddToWishlist(product_id)} className="ml-3 btn btn-primary">Add to Wishlist <CiHeart></CiHeart></button>
+                            wishListBtn ? <button className="ml-3 btn btn-primary" disabled>Add to Wishlist <CiHeart></CiHeart></button> : <button onClick={() => handleAddToWishlist(product_id)} className="ml-6 btn btn-sm rounded-4xl text-center p-2 text-4xl text-purple-500 border-b-purple-600 font-bold bg-gray-300 hover:bg-purple-800  hover:text-white">Add to Wishlist <CiHeart></CiHeart></button>
                         }
                     </div>
                 </div>

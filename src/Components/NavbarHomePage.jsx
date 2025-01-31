@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { CiHeart } from "react-icons/ci";
+// import { CiHeart } from "react-icons/ci";
+import { IoMdHeartEmpty } from "react-icons/io";
 import banner from "../assets/banner.jpg"
 import TitleOfPage from './TitleOfPage';
 
@@ -97,7 +98,8 @@ const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
                     </div>
 
                     <div className="indicator">
-                        <CiHeart className='text-2xl bg-white rounded-full p-1'></CiHeart>
+                    <IoMdHeartEmpty />
+                        {/* <CiHeart className='text-2xl bg-white rounded-full p-1'></CiHeart> */}
                         <span className="badge badge-sm indicator-item">{wishItemsTotal.length}</span>
                     </div>
                 </div>

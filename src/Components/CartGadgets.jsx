@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 
 const CartGadgets = ({cartProducts, setCartProducts}) => {
-
+ console.log(cartProducts);
     const handleDelete = (id) => {
         const remaining = cartProducts.filter(i => i.product_id !== id);
         setCartProducts(remaining);
@@ -31,7 +31,7 @@ const CartGadgets = ({cartProducts, setCartProducts}) => {
 
     return (
         <div>
-            <div className='flex justify-evenly p-6'>
+            <div className='flex justify-between p-6'>
                 <h1 className='font-bold'>Cart</h1>
                 <h1 className='font-bold'>Total Price: ${num}</h1>
 
@@ -64,7 +64,7 @@ const CartGadgets = ({cartProducts, setCartProducts}) => {
                 {
                     cartProducts.map(product => <div key={product.product_id} className='flex gap-5 items-center'>
                         <div>
-                            <img className='w-[100px] h-[100px] rounded-full' src={product.product_image} alt="" />
+                            <img className=' w-[150px] h-[100px] rounded-xl' src={product.product_image} alt="" />
                         </div>
                         <div>
                             <div>
