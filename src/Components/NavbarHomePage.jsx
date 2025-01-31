@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { IoMdHeartEmpty } from "react-icons/io";
 import banner from "../assets/banner.jpg"
 import TitleOfPage from './TitleOfPage';
+import { Helmet } from 'react-helmet';
 
 const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
     const navigate = useNavigate();
@@ -26,7 +27,9 @@ const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
 
     return (
         <div>
-            {/* <TitleOfPage title="Gadget Heaven | Home"></TitleOfPage> */}
+            <Helmet>
+            <TitleOfPage title="Gadget Heaven | Home"></TitleOfPage>
+            </Helmet>
             <div className='bg-purple-800 rounded-3xl mt-6'>
                 <div className="navbar">
                     <div className="navbar-start">
@@ -99,7 +102,7 @@ const NavbarHomePage = ({ cartItemsTotal, wishItemsTotal}) => {
 
                     <div className="indicator">
                     <IoMdHeartEmpty />
-                        {/* <CiHeart className='text-2xl bg-white rounded-full p-1'></CiHeart> */}
+
                         <span className="badge badge-sm indicator-item">{wishItemsTotal.length}</span>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import { MdAddShoppingCart } from "react-icons/md";
 
 import { CiHeart } from 'react-icons/ci';
 import TitleOfPage from './TitleOfPage';
+import { Helmet } from 'react-helmet';
 
 const ProductDetail = () => {
     const { productId } = useParams();
@@ -31,17 +32,19 @@ const ProductDetail = () => {
     };
     return (
         <div>
-            <TitleOfPage title="Gadget Heaven | Dashboard"></TitleOfPage>
+            <Helmet>
+            <TitleOfPage title="Gadget Heaven | Home"></TitleOfPage>
+            </Helmet>
             <div className='bg-purple-600 h-[20rem] rounded-xl flex flex-col items-center pt-10 pb-32 space-y-5'>
                 <h1 className='text-3xl font-semibold text-gray-50 text-center tracking-wide pt-5 pb-2'>Product Details</h1>
-                <p className='text-sm text-gray-200 w-[500px] text-center py-2'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+                <p className='text-sm text-gray-200  text-center py-2'>Explore the latest gadgets that will take your experience to the next level. <br /> From smart devices to the coolest accessories, we have it all!</p>
             </div>
-
-            <div className="-mt-24 hero w-3/4 text-black border-2 border-gray-200 w-[1010px] p-5 mx-auto rounded-xl bg-gray-200 grid grid-cols-5">
+            <div className='lg:relative flex justify-center'>
+            <div className="-mt-24 hero text-black border-2 border-gray-200 w-[900px] p-2 mx-auto rounded-xl bg-gray-200 grid grid-cols-5">
                 <div className="hero-content flex-col col-span-2">
                     <img
                         src={product_image}
-                        className="w-[450px] h-[450px]  rounded-lg shadow-2xl" />
+                        className="w-[650px] h-[450px]  rounded-lg shadow-2xl" />
 
                     <div className='col-span-3 px-5 space-y-1'>
                         <h1 className="text-4xl font-bold">{product_title}</h1>
@@ -58,7 +61,7 @@ const ProductDetail = () => {
                         <ReactStarsRating
                             className='flex g-3 mb-16'
                             count={5}
-                            onChange={() => ratingUpdated(rating)}
+                            onChange={() => ratingUpdated({rating})}
                             size={30}
                             activeColor="#ffd700"
                         />
@@ -72,6 +75,9 @@ const ProductDetail = () => {
                         }
                     </div>
                 </div>
+            </div>
+
+
             </div>
         </div>
     );

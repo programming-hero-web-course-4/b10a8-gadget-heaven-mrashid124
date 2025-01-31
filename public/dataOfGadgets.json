@@ -53,7 +53,7 @@
     {
         "product_id": "4",
         "product_title": "StudyHub Slim 15",
-        "product_image": "https://i.ibb.co.com/ftHX4FM/Lap4.jpg",
+        "product_image": "https://i.ibb.co.com/VQhJS4D/laptop-2221-1779.jpg",
         "category": "Laptop",
         "price": 750,
         "description": "A budget-friendly 15-inch laptop ideal for students and everyday tasks.",
@@ -69,11 +69,11 @@
     },
     {
         "product_id": "5",
-        "product_title": "EliteBook Pro 13",
-        "product_image": "https://i.ibb.co.com/hLcMJ7S/Lap5.jpg",
+        "product_title": "Apple MacBook Air M3",
+        "product_image": "https://i.ibb.co.com/Lx19JtZ/laptop-1-23-2150372404.jpg",
         "category": "Laptop",
-        "price": 1100,
-        "description": "A premium 13-inch business laptop with advanced security features.",
+        "price": 3100,
+        "description": "A powerful with M3 chip laptop with advanced security features.",
         "Specification": [
             "Intel Core i7 Processor",
             "16GB RAM",
@@ -104,29 +104,29 @@
     },
     {
         "product_id": "7",
-        "product_title": "Lite Phone 6S",
-        "product_image": "https://i.ibb.co.com/wdJ6j56/Phn2.jpg",
+        "product_title": "Apple iPhone 15 Pro Max",
+        "product_image": "https://firebasestorage.googleapis.com/v0/b/sajid-hossain.appspot.com/o/A8%2Fmaxresdefault.jpg?alt=media&token=8b0f1808-b729-40eb-912b-0584168bcdc8",
         "category": "Phone",
-        "price": 300,
+        "price": 1300,
         "description": "A compact and affordable smartphone for everyday use.",
         "Specification": [
-            "5.8-inch LCD Display",
-            "64GB Storage",
-            "4GB RAM",
-            "Single 12MP Rear Camera",
-            "4G LTE",
+            "6.7-inch Super Retina XDR display" ,
+            "A17 Bionic chip",
+            "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultra-wide)",
+            "LiDAR Scanner",
+            "Up to 2TB storage",
             "3000mAh Battery"
         ],
         "availability": true,
-        "rating": 3.9
+        "rating": 4.9
     },
     {
         "product_id": "8",
-        "product_title": "Infinity Z Pro",
-        "product_image": "https://i.ibb.co.com/sHNvDmD/Phn3.jpg",
+        "product_title": "OnePlus 12",
+        "product_image": "https://bsqvdcfziwmlpwiksmtt.supabase.co/storage/v1/object/public/images/op11.jpg?t=2024-11-04T09%3A44%3A24.879Z",
         "category": "Phone",
-        "price": 1300,
-        "description": "A high-performance smartphone with a quad-camera setup and ultra-fast processing.",
+        "price": 1100,
+        "description": "A high-performance smartphone with top-notch features and ultra-fast processing.",
         "Specification": [
             "6.8-inch Dynamic AMOLED Display",
             "256GB Storage",
@@ -172,25 +172,25 @@
             "Wireless Charging Case"
         ],
         "availability": true,
-        "rating": 4.5
+        "rating": 4.2
     },
     {
         "product_id": "11",
-        "product_title": "BassBoost Pods",
-        "product_image": "https://i.ibb.co.com/0mfW24M/EarP2.jpg",
+        "product_title": "Apple AirPods Pro",
+        "product_image": "https://bsqvdcfziwmlpwiksmtt.supabase.co/storage/v1/object/public/images/airpods-2.webp?t=2024-11-04T09%3A47%3A22.547Z",
         "category": "EarPod",
-        "price": 150,
-        "description": "Wireless earbuds with enhanced bass and comfortable in-ear fit.",
+        "price": 300,
+        "description": "Wireless earbuds with  with active noise cancellation enhanced  and comfortable in-ear fit.",
         "Specification": [
-            "Enhanced Bass Sound",
+            "Active Noise Cancellation",
             "Up to 18 Hours Battery Life",
             "Bluetooth 5.0",
             "Sweat & Water Resistant (IPX4)",
             "In-Ear Fit",
-            "Quick Charge Feature"
+            "Adaptive EQ"
         ],
         "availability": true,
-        "rating": 3.3
+        "rating": 4.6
     },
     {
         "product_id": "12",

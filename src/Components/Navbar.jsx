@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 import TitleOfPage from './TitleOfPage';
+import { Helmet } from 'react-helmet';
 const Navbar = ({ cartItemsTotal, wishItemsTotal }) => {
     const navigate = useNavigate();
     const handleCartBtn = () => {
@@ -17,7 +18,9 @@ const Navbar = ({ cartItemsTotal, wishItemsTotal }) => {
         </>
     return (
         <div>
+            <Helmet>
             <TitleOfPage title="Gadget Heaven | Home"></TitleOfPage>
+            </Helmet>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">

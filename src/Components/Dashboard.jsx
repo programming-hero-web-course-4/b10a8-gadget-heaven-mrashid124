@@ -4,6 +4,7 @@ import { getToCart, getToWishlist } from '../Utilities/addingToCart';
 import CartGadgets from './CartGadgets';
 import WishingGadgets from './WishingGadgets';
 import TitleOfPage from './TitleOfPage';
+import { Helmet } from 'react-helmet';
 
 const Dashboard = () => {
     const allProducts = useLoaderData();
@@ -39,20 +40,20 @@ const Dashboard = () => {
                 cart: false,
                 status: "wishlist"
             });
-
-
         }
     }
 
     return (
         <div>
+             <Helmet>
              <TitleOfPage title="Gadget Heaven | Dashboard"></TitleOfPage>
+             </Helmet>
             <div className='bg-purple-800 p-5 space-y-5'>
                 <h1 className='text-center text-3xl text-white'>Dashboard</h1>
                 <p className='text-center text-white'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                 <div className='flex justify-center gap-4'>
-                    <button onClick={() => handleStatus("cart")} className={`${isActive.cart ? "bg-purple-300 border-2 rounded-lg p-2" : "border-2 rounded-lg p-2 btn btn-sm"}`}>Cart</button>
-                    <button onClick={() => handleStatus("wishlist")} className={`${isActive.cart ? "border-2 rounded-lg p-2 btn btn-sm" : "bg-purple-300 border-2 rounded-lg p-2"}`}>Wishlist</button>
+                    <button onClick={() => handleStatus("cart")} className={`${isActive.cart ? "bg-purple-300 border-2 rounded-xl px-6" : "border-2 rounded-xl px-6  p-2 btn btn-sm"}`}>Cart</button>
+                    <button onClick={() => handleStatus("wishlist")} className={`${isActive.cart ? "border-2 rounded-xl px-2 btn btn-sm" : "bg-purple-300 border-2 rounded-xl px-2"}`}>Wishlist</button>
                 </div>
             </div>
 
